@@ -8,7 +8,9 @@
   <title>Moneys:Personal Finance App</title>
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+
   <style>
     .bg-f5f5f5 {
       background-color: #f5f5f5;
@@ -63,29 +65,29 @@
   <div class="container-fluid mt-5">
     <div class="row" id="home">
       <div class="col-md-6 offset-md-2">
-        <h1 class="mt-5">Moneys</h1>
-        <h2 class="mt-4">Minimalist expense manager</h2>
-        <p class="mt-5 mb-5 text-font">Moneys is a lightweight and minimalist financial app. <br/>
+        <h1 class="mt-5 wow animate__animated animate__fadeInLeft">Moneys</h1>
+        <h2 class="mt-4 wow animate__animated animate__fadeInLeft animate__delay-1s">Minimalist expense manager</h2>
+        <p class="mt-5 mb-5 text-font wow animate__animated animate__fadeInLeft animate__delay-2s">Moneys is a lightweight and minimalist financial app. <br/>
           We focus on tracking your expenses and income, and has detailed statistics.<br/>
           Start <strong>improving your finances</strong> today! </p>
         <!-- <a href="https://play.google.com/store/apps/details?id=com.sug3rs.calcoin" class="btn" target="_blank">
           <image src="./images/download-app-googleplay.png" width="215"></image>
         </a> -->
-        <div class="text-center">
+        <div class="text-center wow animate__animated animate__fadeInLeft animate__delay-3s">
           <a href="https://apps.apple.com/us/app/moneys-personal-financial-app/id6447467366" class="btn" target="_blank">
             <image src="./images/download-app-appstore.png" width="215"></image>
           </a>
         </div>
       </div>
       <div class="col-md-3 text-center">
-        <img src="./images/Screenshot_1.png" alt="Product Image" class="img-fluid mt-4 mb-4" width="300">
+        <img src="./images/Screenshot_1.png" alt="Product Image" class="img-fluid mt-4 mb-4 wow animate__animated animate__fadeInLeft animate__delay-4s" width="300">
       </div>
     </div>
     <div class="row bg-f5f5f5" id="features">
       <div class="col-md-12 mt-4">
-        <h2 class="text-center mt-4">The Moneys Main Features</h2>
+        <h2 class="text-center mt-4 wow animate__animated animate__fadeInLeft">The Moneys Main Features</h2>
         <div class="container mt-4">
-          <div class="row mb-4 mt-4">
+          <div class="row mb-4 mt-4 wow animate__animated animate__fadeInLeft">
             <div class="col-md-4 text-center">
               <img src="./images/phone.png" width="80">
               <h5>Easy to use</h5>
@@ -102,7 +104,7 @@
               <p class="text-secondary">Unlock app with FaceID.</p>
             </div>
           </div>
-          <div class="row mb-4 mt-4">
+          <div class="row mb-4 mt-4 wow animate__animated animate__fadeInLeft">
             <div class="col-md-4 text-center">
               <img src="./images/chart.png" width="80">
               <h5>Analysis & Statistics & Charts</h5>
@@ -127,7 +129,7 @@
         </div>
       </div>
     </div>
-    <div class="footer text-center pt-4 pb-4" id="contact">
+    <div class="footer wow animate__animated animate__fadeInLeft text-center pt-4 pb-4" id="contact">
       <div >
         <p><a href="mailto:moneysapp@163.com">moneysapp@163.com</a></p>
         <p><a href="https://cherishlau.github.io" target="_blank">BLOG</a></p>
@@ -137,9 +139,11 @@
   </div>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
 </body>
 </html>
